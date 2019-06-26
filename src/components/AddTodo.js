@@ -7,10 +7,10 @@ export class AddTodo extends Component {
   };
 
   /*
-  using the [e.target.name]: e.target.value will allow you to have many input fields,
-  and will enter the information using the name attribute that is associated with each
-  input field. 
-  */
+   * using the [e.target.name]: e.target.value will allow you to have many input fields,
+   * and will enter the information using the name attribute that is associated with each
+   * input field.
+   */
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
     return (
