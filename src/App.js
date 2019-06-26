@@ -21,9 +21,31 @@ class App extends Component {
       }
     ]
   };
+
+  handleComplete = id => {
+    this.setState({
+      todos: this.state.todos.map(todo => {
+        if (todo.id === id) {
+          todo.completed = !todo.completed;
+        }
+        return todo;
+      })
+    });
+  };
+
+  handleDelete = id => {
+    console.log(`delete ${id}`);
+  };
+
   render() {
     // console.log(this.state.todos);
-    return <Todos todos={this.state.todos} />;
+    return (
+      <Todos
+        todos={this.state.todos}
+        handleComplete={this.handleComplete}
+        handleDelete={this.handleDelete}
+      />
+    );
   }
 }
 
