@@ -1,0 +1,36 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+input {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100vw;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background: #666;
+}
